@@ -1,0 +1,5 @@
+Step One: 
+create new file entry.js, index.html
+run webpack to build entry.js to bundle.js
+
+
