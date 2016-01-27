@@ -9,3 +9,15 @@ run webpack to build entry.js and all dependencies into bundle.js
 
 ---------
 webpack will analyze your entry file for dependencies to other files. These files (called modules) are included in your bundle.js too. webpack will give each module a unique id and save all modules accessible by id in the bundle.js file. Only the entry module is executed on startup. A small runtime provides the require function and executes the dependencies when required.
+
+Step Three
+add loader: webpack can only handle Jacascript natively, so if we want to add any other type files, we need include loader.
+1. make sure node version is up to 4.4.1
+2. npm install css-loader style-loader
+3. recompile 
+
+
+
+
+
+
