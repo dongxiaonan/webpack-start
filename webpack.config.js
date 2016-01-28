@@ -12,6 +12,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.BannerPlugin('This file is created by Jiuyou')
+        new webpack.BannerPlugin('This file is created by Jiuyou'),
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
     ]
 };
