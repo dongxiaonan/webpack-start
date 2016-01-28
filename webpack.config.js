@@ -1,3 +1,5 @@
+var webpack = require('webpack')
+
 module.exports = {
     entry: "./scripts/entry.js",
     output: {
@@ -8,5 +10,8 @@ module.exports = {
         loaders: [
             { test: /\.css$/, loader: "style!css" }
         ]
-    }
+    },
+    plugins: [
+        new webpack.BannerPlugin('This file is created by Jiuyou')
+    ]
 };
